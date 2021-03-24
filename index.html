@@ -35,7 +35,71 @@
 
   <body>
     <!--Navigation Bar !START!-->
-    <div data-include="navigation-bar"></div>
+    <div data-include="desktop-navigation-bar"></div>
+
+    <!--Mobile Navigation Bar !START!-->
+    <nav class="title-bar hide-for-large" data-hide-for="large">
+      <div class="top-bar-left">
+        <a href="index.html"
+          ><img
+            alt="Mind.Your Org Text Logo"
+            id="navigation-bar-logo"
+            src="assets/images/essentials/logos/logo-text-small.png"
+        /></a>
+      </div>
+
+      <div class="title-bar-right">
+        <button
+          class="menu-icon"
+          type="button"
+          data-toggle="example-dropdown"
+        ></button>
+      </div>
+    </nav>
+
+    <div class="grid-x">
+      <div class="cell small-offset-7 small-5">
+        <div
+          class="hide-for-large"
+          id="example-dropdown"
+          data-toggler=".show"
+          data-animate="slide-in-right slide-out-right"
+        >
+          <ul class="menu vertical align-center">
+            <br />
+            <li>
+              <a href="#" class="m-mobile-navigation-bar-menu-item">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="m-mobile-navigation-bar-menu-item">Our Projects</a>
+            </li>
+            <li>
+              <a href="#" class="m-mobile-navigation-bar-menu-item">Archives</a>
+            </li>
+            <li>
+              <a href="#" class="m-mobile-navigation-bar-menu-item">Join Us</a>
+            </li>
+            <br />
+            <li class="m-mobile-navigation-bar-text">Follow Us On</li>
+            <br />
+            <li>
+              <a
+                href="https://instagram.com/mind.you_org?igshid=uao9w6cy3qbo"
+                class="m-mobile-navigation-bar-social-media"
+                ><i class="fa fa-instagram" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://instagram.com/mind.you_org?igshid=uao9w6cy3qbo"
+                class="m-mobile-navigation-bar-social-media"
+                ><i class="fa fa-facebook" aria-hidden="true"></i
+              ></a>
+            </li>
+            <br />
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Mobile Navigation Bar !END!-->
     <!--Navigation Bar !END!-->
 
     <!--Javascript Imports-->

@@ -38,22 +38,14 @@
   color: #e59463;
 }
 
-.navigation-bar-hamburger::after {
-  color: #e59463;
-}
-
-.sliding-menu {
-  background-color: red;
-}
-
 .mobile-navigation-bar {
   background-color: gray;
 }
 
 #example-dropdown {
+  display: none;
   width: auto;
-  height: auto;
-
+  height: 25em;
   background-color: #77afaf;
 }
 
@@ -69,6 +61,7 @@
 }
 
 .m-mobile-navigation-bar-menu-item:hover {
+  color: white;
   font-weight: bolder;
 }
 
@@ -79,7 +72,8 @@
 }
 
 .m-mobile-navigation-bar-social-media:hover {
-  font-weight: bolder;
+  color: white;
+  border-bottom: 3px solid white;
 }
 
 .m-mobile-navigation-bar-text {
