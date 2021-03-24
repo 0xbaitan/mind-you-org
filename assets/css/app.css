@@ -1,0 +1,90 @@
+/** Font Imports **/
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+
+/** Navigation Bar */
+
+.navigation-bar {
+  background-color: #170705;
+}
+
+#navigation-bar-menu {
+  background-color: inherit;
+}
+
+.navigation-bar-menu-item {
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 500;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.navigation-bar-menu-item:hover {
+  font-weight: bolder;
+  /**background-color:#e59463;*/
+  color: #e59463;
+}
+
+#navigation-bar-logo {
+  margin-left: 0.5rem;
+}
+
+.navigation-bar-social-media {
+  background-color: inherit;
+  color: white;
+  font-size: 22px;
+}
+
+.navigation-bar-social-media:hover {
+  color: #e59463;
+}
+
+.navigation-bar-hamburger::after {
+  color: #e59463;
+}
+
+.sliding-menu {
+  background-color: red;
+}
+
+.mobile-navigation-bar {
+  background-color: gray;
+}
+
+#example-dropdown {
+  width: auto;
+  height: auto;
+
+  background-color: #77afaf;
+}
+
+#example-dropdown.shown {
+  display: block;
+}
+
+.m-mobile-navigation-bar-menu-item {
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 500;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.m-mobile-navigation-bar-menu-item:hover {
+  font-weight: bolder;
+}
+
+.m-mobile-navigation-bar-social-media {
+  background-color: inherit;
+  color: white;
+  font-size: 22px;
+}
+
+.m-mobile-navigation-bar-social-media:hover {
+  font-weight: bolder;
+}
+
+.m-mobile-navigation-bar-text {
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 500;
+  font-family: "Didact Gothic", sans-serif;
+}
