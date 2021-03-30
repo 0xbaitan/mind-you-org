@@ -13,6 +13,6 @@ $(".carousel").flickity({
 
 /** Disables scrolling when mobile navigation bar is activated */
 $(".menu-icon").click(function () {
-  $("body").toggleClass("m-no-scroll");
-  $("body").toggleClass("m-no-touch");
+  $("#main").toggleClass("m-no-scroll");
+  $("#main").toggleClass("m-no-touch");
 });
