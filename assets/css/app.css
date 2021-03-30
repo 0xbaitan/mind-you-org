@@ -1,10 +1,15 @@
 /** Font Imports **/
-@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 /** Navigation Bar */
 
-.navigation-bar {
-  background-color: #170705;
+body {
+  overflow-x: hidden;
+  overflow: scroll;
+}
+
+.m-navigation-bar {
+  background-color: #000000;
+  height: 5rem;
 }
 
 #navigation-bar-menu {
@@ -12,10 +17,10 @@
 }
 
 .navigation-bar-menu-item {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   color: white;
   font-weight: 500;
-  font-family: "Didact Gothic", sans-serif;
+  font-family: "Noto Sans", Helvetica, sans-serif;
 }
 
 .navigation-bar-menu-item:hover {
@@ -31,33 +36,33 @@
 .navigation-bar-social-media {
   background-color: inherit;
   color: white;
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 
 .navigation-bar-social-media:hover {
   color: #e59463;
 }
 
-.mobile-navigation-bar {
-  background-color: gray;
-}
-
 #example-dropdown {
+  position: relative;
+  z-index: 1;
   display: none;
   width: auto;
-  height: 25em;
-  background-color: #77afaf;
+  height: 100vh;
+  background-color: #e59463;
 }
 
 #example-dropdown.shown {
-  display: block;
+  display: flex;
 }
 
-.m-mobile-navigation-bar-menu-item {
-  font-size: 1.25rem;
+.m-mobile-navigation-bar-menu-item,
+.m-mobile-navigation-bar-text {
+  font-size: 1.35rem;
   color: white;
   font-weight: 500;
-  font-family: "Didact Gothic", sans-serif;
+  font-family: "Noto Sans", Helvetica, sans-serif;
+  margin-top: 1.35rem;
 }
 
 .m-mobile-navigation-bar-menu-item:hover {
@@ -68,7 +73,7 @@
 .m-mobile-navigation-bar-social-media {
   background-color: inherit;
   color: white;
-  font-size: 22px;
+  font-size: 1.645rem;
 }
 
 .m-mobile-navigation-bar-social-media:hover {
@@ -76,9 +81,109 @@
   border-bottom: 3px solid white;
 }
 
-.m-mobile-navigation-bar-text {
-  font-size: 1.25rem;
-  color: white;
+/**---------------- Title Section -------------------**/
+.m-title-section {
+  position: absolute;
+  top: 7rem;
+  margin-left: 1.67rem;
+  margin-right: 1.67rem;
+  background-color: silver;
+}
+/**!!------------- !Title Section! ----------------!!**/
+
+/**---------------- Typography -------------------**/
+
+.m-content-pane {
+  position: absolute;
+  top: 32rem;
+  margin-left: 1.67rem;
+  margin-right: 1.67rem;
+}
+/** Headings */
+.m-title-heading {
+  float: left;
+  line-height: 1.4;
   font-weight: 500;
-  font-family: "Didact Gothic", sans-serif;
+  letter-spacing: 0.125rem;
+  font-size: 2rem;
+  font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/** Paragraphs */
+.m-paragraph {
+  line-height: 1.4;
+  float: left;
+  font-size: 1rem;
+  font-family: "Noto Sans", Helvetica, sans-serif;
+  margin-bottom: 1.15rem;
+}
+
+/**!!--------------- !Typography! -----------------!!**/
+
+/** ---------------- Orbit -------------------**/
+
+#m-carousel-section {
+  display: block;
+  position: absolute;
+  top: 20rem;
+  margin-top: 0rem;
+  background: #eee;
+  margin-left: 1.67rem;
+  margin-right: 1.67rem;
+}
+.carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-cell {
+  height: 100%;
+  width: 100%;
+}
+
+/** !!--------------- !Orbit! -----------------!!**/
+
+/** ---------------- Utilities -------------------**/
+.m-no-scroll {
+  overflow: hidden;
+}
+/** !!--------------- !Utilities! -----------------!!**/
+
+/** For Mobile Screens */
+@media screen and (max-width: 39.9375em) {
+  .m-content-pane {
+    max-width: 16.67rem;
+  }
+
+  .carousel,
+  .m-carousel-image {
+    width: 26rem;
+    height: 26rem;
+  }
+}
+
+/** For Tab Screens */
+@media screen and (min-width: 40em) {
+  .m-content-pane {
+    max-width: 33.33rem;
+  }
+  .carousel,
+  .m-carousel-image {
+    width: 33.33rem;
+    height: 33.33rem;
+  }
+}
+
+/** For Desktop Screens */
+@media screen and (min-width: 64em) {
+  .m-content-pane {
+    max-width: 56.67rem;
+  }
+  .carousel,
+  .m-carousel-image {
+    width: 56.67rem;
+    height: 56.67rem;
+  }
 }

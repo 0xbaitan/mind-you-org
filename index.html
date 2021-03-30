@@ -31,76 +31,129 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css"
     />
+
+    <!--Flickity Plugin-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
   </head>
 
   <body>
     <!--Navigation Bar !START!-->
-    <div data-include="desktop-navigation-bar"></div>
+    <section id="body">
+      <div data-include="desktop-navigation-bar"></div>
 
-    <!--Mobile Navigation Bar !START!-->
-    <nav class="title-bar hide-for-large" data-hide-for="large">
-      <div class="top-bar-left">
-        <a href="index.html"
-          ><img
-            alt="Mind.Your Org Text Logo"
-            id="navigation-bar-logo"
-            src="assets/images/essentials/logos/logo-text-small.png"
-        /></a>
-      </div>
+      <!--Mobile Navigation Bar !START!-->
+      <nav
+        class="title-bar m-navigation-bar hide-for-large"
+        data-hide-for="large"
+      >
+        <div class="top-bar-left">
+          <a href="index.html"
+            ><img
+              alt="Mind.Your Org Text Logo"
+              id="navigation-bar-logo"
+              src="assets/images/essentials/logos/logo-text-small.png"
+          /></a>
+        </div>
 
-      <div class="title-bar-right">
-        <button
-          class="menu-icon"
-          type="button"
-          data-toggle="example-dropdown"
-        ></button>
-      </div>
-    </nav>
+        <div class="title-bar-right">
+          <button
+            class="menu-icon"
+            type="button"
+            data-toggle="example-dropdown"
+          ></button>
+        </div>
+      </nav>
 
-    <div class="grid-x">
-      <div class="cell small-offset-7 small-5">
-        <div
-          class="hide-for-large"
-          id="example-dropdown"
-          data-toggler=".show"
-          data-animate="slide-in-right slide-out-right"
-        >
-          <ul class="menu vertical align-center">
-            <br />
-            <li>
-              <a href="#" class="m-mobile-navigation-bar-menu-item">About Us</a>
-            </li>
-            <li>
-              <a href="#" class="m-mobile-navigation-bar-menu-item">Our Projects</a>
-            </li>
-            <li>
-              <a href="#" class="m-mobile-navigation-bar-menu-item">Archives</a>
-            </li>
-            <li>
-              <a href="#" class="m-mobile-navigation-bar-menu-item">Join Us</a>
-            </li>
-            <br />
-            <li class="m-mobile-navigation-bar-text">Follow Us On</li>
-            <br />
-            <li>
-              <a
-                href="https://instagram.com/mind.you_org?igshid=uao9w6cy3qbo"
-                class="m-mobile-navigation-bar-social-media"
-                ><i class="fa fa-instagram" aria-hidden="true"></i
-              ></a>
-              <a
-                href="https://instagram.com/mind.you_org?igshid=uao9w6cy3qbo"
-                class="m-mobile-navigation-bar-social-media"
-                ><i class="fa fa-facebook" aria-hidden="true"></i
-              ></a>
-            </li>
-            <br />
-          </ul>
+      <div class="grid-x">
+        <div class="cell small-12">
+          <div
+            class="hide-for-large"
+            id="example-dropdown"
+            data-toggler=".show"
+            data-animate="slide-in-right slide-out-right"
+          >
+            <ul class="menu vertical align-center">
+              <br />
+              <li>
+                <a href="#" class="m-mobile-navigation-bar-menu-item"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="m-mobile-navigation-bar-menu-item"
+                  >Our Projects</a
+                >
+              </li>
+              <li>
+                <a href="#" class="m-mobile-navigation-bar-menu-item"
+                  >Archives</a
+                >
+              </li>
+              <li>
+                <a href="#" class="m-mobile-navigation-bar-menu-item"
+                  >Join Us</a
+                >
+              </li>
+              <br />
+              <li class="m-mobile-navigation-bar-text">Follow Us On</li>
+              <br />
+              <li>
+                <a
+                  href="https://instagram.com/mind.you_org?igshid=uao9w6cy3qbo"
+                  class="m-mobile-navigation-bar-social-media"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+                <a
+                  href="https://instagram.com/mind.you_org?igshid=uao9w6cy3qbo"
+                  class="m-mobile-navigation-bar-social-media"
+                  ><i class="fa fa-facebook" aria-hidden="true"></i
+                ></a>
+              </li>
+              <br />
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <!--Mobile Navigation Bar !END!-->
-    <!--Navigation Bar !END!-->
+      <!--Mobile Navigation Bar !END!-->
+      <!--Navigation Bar !END!-->
+      <div data-include="title"></div>
+
+      <section id="m-carousel-section">
+        <div class="carousel">
+          <div class="carousel-cell">
+            <img
+              class="m-carousel-image"
+              src="assets/images/archives/2021/march/what-defines-slutshaming/slideshow/S2.png"
+              alt="Space"
+            />
+            <figcaption class="flickity-caption">
+              Space, the final frontier.
+            </figcaption>
+          </div>
+          <div class="carousel-cell">
+            <img
+              class="m-carousel-image"
+              src="assets/images/archives/2021/march/what-defines-slutshaming/slideshow/S2.png"
+              alt="Space"
+            />
+            <figcaption class="flickity-caption">
+              Space, the final frontier.
+            </figcaption>
+          </div>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+        </div>
+      </section>
+    </section>
 
     <!--Javascript Imports-->
 
@@ -113,10 +166,13 @@
       integrity="sha256-WUKHnLrIrx8dew//IpSEmPN/NT3DGAEmIePQYIEJLLs= sha384-53StQWuVbn6figscdDC3xV00aYCPEz3srBdV/QGSXw3f19og3Tq2wTRe0vJqRTEO sha512-X9O+2f1ty1rzBJOC8AXBnuNUdyJg0m8xMKmbt9I3Vu/UOWmSg5zG+dtnje4wAZrKtkopz/PEDClHZ1LXx5IeOw=="
       crossorigin="anonymous"
     ></script>
-    <!--Foundation Initialisation-->
-    <script>
-      $(document).foundation();
-    </script>
+
+    <!--Flickity Plugin-->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!--Page Initialisation (Foundation, Plugins, etc.)-->
+    <script src="assets/js/page-init.js"></script>
+
     <!--Template Include Imports-->
     <script src="assets/js/templates-load.js"></script>
   </body>
