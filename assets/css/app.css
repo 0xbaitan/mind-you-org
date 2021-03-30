@@ -9,7 +9,7 @@ body {
 .m-navigation-bar {
   background-color: #000000;
   height: 5rem;
-  width: 100%;
+  width: auto;
 }
 
 #navigation-bar-menu {
