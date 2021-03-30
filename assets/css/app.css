@@ -149,6 +149,11 @@ body {
 .m-no-scroll {
   overflow: hidden;
 }
+
+.m-no-touch {
+  touch-action: none;
+  -ms-touch-action: none;
+}
 /** !!--------------- !Utilities! -----------------!!**/
 
 /** For Mobile Screens */
@@ -159,8 +164,8 @@ body {
 
   .carousel,
   .m-carousel-image {
-    width: 26rem;
-    height: 26rem;
+    width: 16.67rem;
+    height: 16.67rem;
   }
 }
 
