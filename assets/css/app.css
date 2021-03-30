@@ -83,10 +83,6 @@ body {
 
 /**---------------- Title Section -------------------**/
 .m-title-section {
-  position: absolute;
-  top: 7rem;
-  margin-left: 1.67rem;
-  margin-right: 1.67rem;
   background-color: silver;
 }
 /**!!------------- !Title Section! ----------------!!**/
@@ -126,7 +122,6 @@ body {
 
 #m-carousel-section {
   display: block;
-  position: absolute;
   top: 20rem;
   margin-top: 0rem;
   background: #eee;
