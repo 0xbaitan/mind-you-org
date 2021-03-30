@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 /** Navigation Bar */
 
-body {
+#main {
   overflow-x: hidden;
 }
 
