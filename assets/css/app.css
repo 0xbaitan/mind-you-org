@@ -4,12 +4,12 @@
 
 body {
   overflow-x: hidden;
-  overflow: scroll;
 }
 
 .m-navigation-bar {
   background-color: #000000;
   height: 5rem;
+  width: 100%;
 }
 
 #navigation-bar-menu {
@@ -47,7 +47,7 @@ body {
   position: relative;
   z-index: 1;
   display: none;
-  width: auto;
+  width: 100%;
   height: 100vh;
   background-color: #e59463;
 }
@@ -127,6 +127,7 @@ body {
   background: #eee;
   margin-left: 1.67rem;
   margin-right: 1.67rem;
+  overflow-x: clip;
 }
 .carousel {
   width: 100%;
