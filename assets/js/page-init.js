@@ -15,4 +15,8 @@ $(".carousel").flickity({
 $(".menu-icon").click(function () {
   $("#main").toggleClass("m-no-scroll");
   $("#main").toggleClass("m-no-touch");
+  $("html").toggleClass("m-no-scroll");
+  $("html").toggleClass("m-no-touch");
+  $("body").toggleClass("m-no-touch");
+  $("body").toggleClass("m-no-touch");
 });

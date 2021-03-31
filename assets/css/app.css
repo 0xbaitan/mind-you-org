@@ -3,7 +3,7 @@
 /** Navigation Bar */
 
 #main {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .m-navigation-bar {
@@ -83,19 +83,16 @@
 
 /**---------------- Title Section -------------------**/
 .m-title-section {
-  background-color: silver;
-}
-/**!!------------- !Title Section! ----------------!!**/
-
-/**---------------- Typography -------------------**/
-
-.m-content-pane {
-  position: absolute;
-  top: 32rem;
+  margin-top: 4.5rem;
+  margin-bottom: 3rem;
   margin-left: 1.67rem;
   margin-right: 1.67rem;
 }
-/** Headings */
+
+.m-title-breadcrumbs li {
+  font-family: "Noto Sans", Helvetica, sans-serif;
+}
+
 .m-title-heading {
   float: left;
   line-height: 1.4;
@@ -103,8 +100,30 @@
   letter-spacing: 0.125rem;
   font-size: 2rem;
   font-family: "Noto Sans", Arial, Helvetica, sans-serif;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-top: 1.2rem;
+}
+
+.m-title-calendar {
+  margin-top: 1.2rem;
+  float: left;
+  line-height: 1.4;
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+  color: gray;
+}
+
+/**!!------------- !Title Section! ----------------!!**/
+
+/**---------------- Typography -------------------**/
+
+.m-content-pane {
+  position: relative;
+  margin-left: 1.67rem;
+  margin-right: 1.67rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+
 }
 
 /** Paragraphs */
@@ -123,7 +142,6 @@
 #m-carousel-section {
   top: 20rem;
   margin-top: 0rem;
-  background: #eee;
   overflow-x: clip;
 }
 
@@ -153,7 +171,7 @@
 /** For Mobile Screens */
 @media screen and (max-width: 39.9375em) {
   .m-content-pane {
-    max-width: 16.67rem;
+    max-width: 21.67rem;
   }
 
   .carousel,
