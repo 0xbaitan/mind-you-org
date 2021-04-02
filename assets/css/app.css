@@ -16,6 +16,7 @@
   background-color: #000000;
   height: 5rem;
   width: auto;
+  
 }
 
 #navigation-bar-menu {
@@ -293,11 +294,11 @@
   }
 
   .m-recent-posts-image {
-    height: 12rem;
-    width: 12rem;
+    height: 10rem;
+    width: 10rem;
   }
   .m-recent-posts-box {
-    height: 12rem;
+    height: 10rem;
   }
 }
 
