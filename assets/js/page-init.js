@@ -13,10 +13,14 @@ $(".carousel").flickity({
 
 /** Disables scrolling when mobile navigation bar is activated */
 $(".menu-icon").click(function () {
-  $("#main").toggleClass("m-no-scroll");
-  $("#main").toggleClass("m-no-touch");
-  $("html").toggleClass("m-no-scroll");
-  $("html").toggleClass("m-no-touch");
-  $("body").toggleClass("m-no-touch");
-  $("body").toggleClass("m-no-touch");
+  $(".m-main-content-section").toggleClass("m-util-hide");
+});
+
+$(window).on("resize", function () {
+  var win = $(this); //this = window
+  if (win.width() <= 1024 && $("#example-dropdown").css("display") == "block") {
+    $(".m-main-content-section").addClass("m-util-hide");
+  } else if ($(".m-main-content-section").hasClass("m-util-hide")) {
+    $(".m-main-content-section").removeClass("m-util-hide");
+  }
 });

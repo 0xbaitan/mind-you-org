@@ -4,6 +4,12 @@
 
 #main {
   overflow: hidden;
+  background-color: #e9e9e9;
+  font-family: "Noto Sans", Helvetica, sans-serif;
+}
+
+.m-main-content-section {
+  display: visible;
 }
 
 .m-navigation-bar {
@@ -87,10 +93,6 @@
   margin-bottom: 3rem;
 }
 
-.m-title-breadcrumbs li {
-  font-family: "Noto Sans", Helvetica, sans-serif;
-}
-
 .m-title-heading {
   float: left;
   line-height: 1.4;
@@ -106,12 +108,95 @@
   float: left;
   line-height: 1.4;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: "Noto Sans", Arial, Helvetica, sans-serif;
-  color: gray;
+  color: #8c8c8c;
 }
 
 /**!!------------- !Title Section! ----------------!!**/
+
+/**---------------- References Section -------------------**/
+
+.m-references-section {
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+}
+
+.m-references-text {
+  font-size: 1.5rem;
+}
+.m-references-section li {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+}
+
+/**!!------------- !References Section! ----------------!!**/
+
+/**---------------- Recent Posts Section -------------------**/
+
+.m-recent-posts-section {
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  color: black;
+  font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+}
+
+.m-recent-posts-box {
+  padding: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.m-recent-posts-box-text {
+  max-width: 20ch;
+  font-size: 1rem;
+  color: #333333;
+  font-weight: 500;
+  margin: 2rem;
+}
+
+.m-recent-posts-box-text:hover {
+  font-weight: bolder;
+  color: #333333;
+}
+
+.m-recent-posts-text {
+  font-size: 1.5rem;
+}
+
+.m-recent-posts-image {
+  height: 12rem;
+  width: 12rem;
+}
+.m-recent-posts-section li {
+  margin-top: 0.75rem;
+}
+
+/**!!------------- !Recent Posts Section! ----------------!!**/
+
+/**---------------- Footer Section -------------------**/
+
+.m-footer-section {
+  margin-top: 3rem;
+  height: 10rem;
+  background-color: black;
+  border-top: 0.3rem ridge #e59463;
+}
+
+.m-footer-text-medium {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.m-footer-text-small {
+  color: white;
+  font-size: 0.8rem;
+}
+
+/**!!------------- !Footer Section! ----------------!!**/
 
 /**---------------- Typography -------------------**/
 
@@ -161,41 +246,103 @@
   touch-action: none;
   -ms-touch-action: none;
 }
+
+.m-util-hide {
+  display: none;
+}
+
+.m-util-show {
+  display: visible;
+}
+/** Vertical Tabs */
+
+.m-vertical-tab-1 {
+  padding-top: 1rem;
+}
+
+.m-vertical-tab-2 {
+  padding-top: 2rem;
+}
+
+.m-vertical-tab-3 {
+  padding-top: 3rem;
+}
+
+/** Horizontal Tabs */
+
+.m-horizontal-tab-1 {
+  padding-left: 1rem;
+}
+
+.m-horizontal-tab-2 {
+  padding-left: 2rem;
+}
+
+.m-horizontal-tab-3 {
+  padding-left: 3rem;
+}
+
 /** !!--------------- !Utilities! -----------------!!**/
 
 /** For Mobile Screens */
 @media screen and (max-width: 39.9375em) {
-  .m-content-pane {
-    max-width: 21.67rem;
-  }
-
   .carousel,
   .m-carousel-image {
     width: 16.67rem;
     height: 16.67rem;
   }
+
+  .m-recent-posts-image {
+    height: 12rem;
+    width: 12rem;
+  }
+  .m-recent-posts-box {
+    height: 12rem;
+  }
 }
 
 /** For Tab Screens */
 @media screen and (min-width: 40em) {
-  .m-content-pane {
-    max-width: 33.33rem;
+  .m-main-content-section {
+    display: show;
   }
   .carousel,
   .m-carousel-image {
     width: 33.33rem;
     height: 33.33rem;
   }
+
+  .m-recent-posts-image {
+    height: 12rem;
+    width: 12rem;
+  }
+
+  .m-recent-posts-box {
+    height: 12rem;
+  }
+
+  .m-recent-posts-box-text {
+    max-width: 40ch;
+  }
 }
 
 /** For Desktop Screens */
 @media screen and (min-width: 64em) {
-  .m-content-pane {
-    max-width: 56.67rem;
+  .m-main-content-section {
+    display: show;
   }
   .carousel,
   .m-carousel-image {
     width: 56.67rem;
     height: 56.67rem;
+  }
+
+  .m-recent-posts-image {
+    height: 16rem;
+    width: 16rem;
+  }
+
+  .m-recent-posts-box {
+    height: 16rem;
   }
 }
