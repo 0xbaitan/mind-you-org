@@ -16,7 +16,6 @@
   background-color: #000000;
   height: 5rem;
   width: auto;
-  
 }
 
 #navigation-bar-menu {
@@ -128,8 +127,14 @@
 .m-references-text {
   font-size: 1.5rem;
 }
+
+.m-references-section a {
+  margin: 0;
+  padding-left: 0.5rem;
+}
+
 .m-references-section li {
-  margin-top: 0.75rem;
+  margin-top: 2rem;
   font-size: 1rem;
 }
 
