@@ -152,11 +152,10 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .m-recent-posts-box-text {
-  max-width: 20ch;
   font-size: 1rem;
   color: #333333;
   font-weight: 500;
-  margin: 2rem;
+  width: 15rem;
 }
 
 .m-recent-posts-box-text:hover {
@@ -300,6 +299,12 @@
   .m-recent-posts-box {
     height: 8rem;
   }
+
+  .m-recent-posts-box-text {
+    padding: 1rem;
+    padding-top: 2rem;
+    font-size: 1rem;
+  }
 }
 
 /** For Tab Screens */
@@ -323,7 +328,9 @@
   }
 
   .m-recent-posts-box-text {
-    max-width: 40ch;
+    padding: 2rem;
+    padding-top: 4rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -345,5 +352,11 @@
 
   .m-recent-posts-box {
     height: 16rem;
+  }
+
+  .m-recent-posts-box-text {
+    padding: 4rem;
+    padding-top: 4rem;
+    font-size: 1.5rem;
   }
 }
