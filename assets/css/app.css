@@ -177,6 +177,34 @@
 
 /**!!------------- !Recent Posts Section! ----------------!!**/
 
+/**---------------- Projects Section -------------------**/
+
+.m-projects-section {
+  position: relative;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.m-projects-bubble {
+  background-color: #e9e9e9;
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 rgba(0, 0, 0, 0.02);
+  border-radius: 8px;
+  border: none;
+  transition: 1s;
+  margin-bottom: 2rem;
+}
+
+.m-projects-bubble-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.m-projects-bubble:hover {
+  box-shadow: 0 8px 16px 0 #00000033, 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+/**!!------------- !Projects Section! ----------------!!**/
+
 /**---------------- Footer Section -------------------**/
 
 .m-footer-section {
@@ -200,10 +228,22 @@
 
 /**---------------- Typography -------------------**/
 
-.m-content-pane {
+.m-section-content-pane {
   position: relative;
   margin-top: 6rem;
   margin-bottom: 6rem;
+}
+
+.m-heading-center {
+  float: left;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 0.125rem;
+  font-size: 3rem;
+  font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  text-align: center;
 }
 
 /** Paragraphs */
@@ -235,7 +275,10 @@
   width: 100%;
 }
 
+
 /** !!--------------- !Orbit! -----------------!!**/
+
+
 
 /** ---------------- Utilities -------------------**/
 .m-no-scroll {
@@ -280,6 +323,11 @@
 
 .m-horizontal-tab-3 {
   padding-left: 3rem;
+}
+
+.m-centered {
+  display: block;
+  text-align: center;
 }
 
 /** !!--------------- !Utilities! -----------------!!**/

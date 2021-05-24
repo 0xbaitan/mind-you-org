@@ -1,3 +1,4 @@
+
 /**Foundation */
 $(document).foundation();
 
@@ -24,3 +25,4 @@ $(window).on("resize", function () {
     $(".m-main-content-section").removeClass("m-util-hide");
   }
 });
+

@@ -20,6 +20,8 @@
     <!--Customisation to Foundation-->
     <link rel="stylesheet" href="assets/css/app.css" />
 
+    <link rel="stylesheet" href="assets/css/about-us.css" />
+
     <!--Font Awesome 4.7.0-->
     <link
       rel="stylesheet"
@@ -83,7 +85,9 @@
                 >
               </li>
               <li>
-                <a href="/projects.html" class="m-mobile-navigation-bar-menu-item"
+                <a
+                  href="/projects.html"
+                  class="m-mobile-navigation-bar-menu-item"
                   >Our Projects</a
                 >
               </li>
@@ -125,70 +129,52 @@
       <section class="m-main-content-section">
         <!--Mobile Navigation Bar !END!-->
         <!--Navigation Bar !END!-->
-        <div data-include="title"></div>
-
-        <section id=" grid-x grid-margin-x m-carousel-section">
-          <div class="cell small-offset-1 small-10 carousel">
-            <div class="carousel-cell">
+        <section id="m-logo-section">
+          <div class="grid-x grid-margin-x">
+            <div id="m-logo" class="cell small-offset-4 small-4">
               <img
-                class="m-carousel-image"
-                src="assets/images/archives/2021/march/lets-learn-about-ptsd/slideshow/S1.png"
-              />
-            </div>
-            <div class="carousel-cell">
-              <img
-                class="m-carousel-image"
-                src="assets/images/archives/2021/march/lets-learn-about-ptsd/slideshow/S2.png"
-              />
-            </div>
-            <div class="carousel-cell">
-              <img
-                class="m-carousel-image"
-                src="assets/images/archives/2021/march/lets-learn-about-ptsd/slideshow/S3.png"
-              />
-            </div>
-            <div class="carousel-cell">
-              <img
-                class="m-carousel-image"
-                src="assets/images/archives/2021/march/lets-learn-about-ptsd/slideshow/S4.png"
-              />
-            </div>
-            <div class="carousel-cell">
-              <img
-                class="m-carousel-image"
-                src="assets/images/archives/2021/march/lets-learn-about-ptsd/slideshow/S5.png"
-              />
-            </div>
-            <div class="carousel-cell">
-              <img
-                class="m-carousel-image"
-                src="assets/images/archives/2021/march/lets-learn-about-ptsd/slideshow/S6.png"
-              />
-            </div>
-            <div class="carousel-cell">
-              <img
-                class="m-carousel-image"
-                src="assets/images/archives/2021/march/lets-learn-about-ptsd/slideshow/S7.png"
-              />
-            </div>
-            <div class="carousel-cell">
-              <img
-                class="m-carousel-image"
-                src="assets/images/archives/2021/march/lets-learn-about-ptsd/slideshow/S8.png"
-              />
-            </div>
-            <div class="carousel-cell">
-              <img
-                class="m-carousel-image"
-                src="assets/images/archives/2021/march/lets-learn-about-ptsd/slideshow/S9.png"
+                src="assets/images/essentials/logos/logo-rectangular-big.png"
               />
             </div>
           </div>
         </section>
+        <section
+          class="m-section-content-pane grid-x grid-margin-x"
+          data-xml-content-path="assets/data/about-us.xml"
+          data-headings-count="2"
+        ></section>
 
-        <div data-include="content"></div>
-        <div data-include="references"></div>
-        <div data-include="recent-posts"></div>
+        <section id="m-meet-our-team-section">
+          <div class="grid-x grid-margin-x">
+       
+          <h1 class="cell small-offset-1 small-10 m-heading-center">Meet Our Team</h1>
+          <h2 class="cell small-offset-1 small-10 m-heading-center">Founder & President</h2>
+          <div id="m-logo" class="cell">
+            <img
+              src="assets/images/about-us/varshneyee_dutt.jpg"
+            />
+          </div>
+          <h2 class="cell small-offset-1 small-10 m-heading-center">Executive Officer & Secretary</h2>
+          <div id="m-logo" class="cell">
+            <img
+              src="assets/images/about-us/anwesh_banerjee.jpg"
+            />
+          </div>
+
+          <h2 class="cell small-offset-1 small-10 m-heading-center">Specialists On Board With Us</h2>
+          <div id="m-logo" class="cell">
+            <img
+              src="assets/images/about-us/sreepriya_bhowmik.jpg"
+            />
+          </div>
+          <div id="m-logo" class="cell">
+            <img
+              src="assets/images/about-us/sreetama_chatterjee.jpg"
+            />
+          </div>
+        </div>
+        </section>
+
         <div data-include="footer"></div>
       </section>
     </section>
@@ -213,5 +199,7 @@
 
     <!--Template Include Imports-->
     <script src="assets/js/templates-load.js"></script>
+
+    <script src="assets/js/paragraph-load.js"></script>
   </body>
 </html>

@@ -1,0 +1,20 @@
+/** CSS for About Us Page */
+
+#m-logo-section {
+  margin-top: 6rem;
+}
+#m-logo img {
+  display: block;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 480px;
+
+}
+
+/** ------------------ Meet Our Team ---------------------**/
+#m-meet-our-team-section {
+}
+
+
+/** !!--------------- !Meet Our Team! -----------------!!**/
